@@ -23,3 +23,13 @@ plants <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesda
 
 ```
 
+## Filtrando los datos para resolver el ejemplo 1
+
+```{r}
+Chile= plants %>% 
+  dplyr:: filter(country=="Chile") %>% 
+  dplyr::select(binomial_name,country, red_list_category)
+
+Chile
+```
+
