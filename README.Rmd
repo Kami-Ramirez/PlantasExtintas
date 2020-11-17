@@ -10,4 +10,16 @@ knitr::opts_chunk$set(echo = TRUE)
 # Introduccion
 En este documento trabajaremos para explorar la id de plantas q se encuentran en silvestria segun la [*IUCN*](https://www.iucnredlist.org/es/)
 
-## Subtitulo
+## Trabajando con los datos
+
+Vamos a partir cargando los paquetes
+```{r}
+library(tidyverse)
+```
+
+```{r}
+library(readr)
+plants <- read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-08-18/plants.csv")
+
+```
+
